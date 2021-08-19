@@ -1,3 +1,4 @@
+import "./restore.css";
 import "./styles.css";
 import Footer from "./Components/Footer/Footer";
 import Content from "./Components/Content/Content";
