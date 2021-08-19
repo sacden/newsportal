@@ -5,7 +5,7 @@ import Header from "./Components/Header/Header";
 
 function App() {
   return (
-    <div className="page">
+    <div className="page container-fluid">
       <Header />
       <Content />
       <Footer />

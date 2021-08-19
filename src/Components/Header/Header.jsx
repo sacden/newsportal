@@ -6,11 +6,13 @@ import Logo from "./Logo/Logo";
 
 const Header = () => {
   return (
-    <div className="header">
-      <div className="header__container">
-        <Logo />
-        <SearchForm />
-        <LangDropDown />
+    <div className="header container">
+      <div className="header__container container">
+        <div className="row">
+          <Logo />
+          <SearchForm />
+          <LangDropDown />
+        </div>
       </div>
       <Navigation />
     </div>
