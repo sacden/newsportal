@@ -6,8 +6,8 @@ import Logo from "./Logo/Logo";
 
 const Header = () => {
   return (
-    <div className="header container">
-      <div className="header__container container">
+    <div className="header">
+      <div className="header__container">
         <div className="row">
           <Logo />
           <SearchForm />
