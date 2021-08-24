@@ -1,0 +1,85 @@
+body {
+  font-size: 14px !important;
+}
+.header__container {
+  margin-top: 10px;
+}
+
+#page {
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+#search-dropdown-category {
+  background-color: #f9f9fb;
+  border: 1px solid #e0e0e1;
+  transition: background-color 0.15s ease-in-out;
+  border-radius: 6px 0 0 6px;
+  color: #505050;
+}
+#search-dropdown-category:focus {
+  color: #505050;
+  box-shadow: none;
+  outline: none;
+}
+
+#search-dropdown-category:hover {
+  background-color: #e9e7e7;
+}
+
+#search-dropdown-input:focus {
+  box-shadow: none;
+  outline: none;
+  border: 1px solid #e0e0e1;
+}
+
+#search-dropdown-input {
+  box-shadow: none;
+  outline: none;
+  border: 1px solid #e0e0e1;
+}
+
+#search-button {
+  background-color: #404040;
+  color: #fff;
+  box-shadow: none;
+  outline: none;
+  border: 1px solid #404040;
+}
+
+#lang-switch:hover {
+  box-shadow: none;
+  outline: none;
+  border: 1px solid #e0e0e1;
+}
+
+#lang-switch {
+  background-color: #f9f9fb;
+  border: 1px solid #e0e0e1;
+  border-radius: 6px 6px;
+  color: #505050;
+  box-shadow: none;
+  outline: none;
+}
+
+#page > div.header > div.header__container > div > div.header__language-dropdown.col-2 > div > ul > li > button:active {
+  background: #eaecf0 !important;
+  color: #505050 !important;
+}
+
+.btn {
+  font-size: 14px !important;
+}
+
+#search-dropdown-input::placeholder {
+  color: #bcbbbb;
+  font-size: 14px;
+}
+
+.dropdown-item {
+  font-size: 14px;
+}
+#page > div.header > div.header__container > div > div.header__search-form.col-4 > div > ul > li > a:active {
+  background: #eaecf0 !important;
+  color: #505050 !important;
+}

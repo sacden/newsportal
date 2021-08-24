@@ -1,4 +1,3 @@
-import "./restore.css";
 import "./styles.css";
 import Footer from "./Components/Footer/Footer";
 import Content from "./Components/Content/Content";
@@ -6,7 +5,7 @@ import Header from "./Components/Header/Header";
 
 function App() {
   return (
-    <div className="page container-fluid">
+    <div className="page container-fluid" id="page">
       <Header />
       <Content />
       <Footer />
