@@ -1,24 +1,23 @@
 import React, { useState } from "react";
-import * as bootstrap from "bootstrap";
+
 const LangDropDown = () => {
-  const [lang, setLanguage] = useState([
-    { label: "English", value: "English" },
-    { label: "French", value: "French" },
-    { label: "German", value: "German" },
+  const [lang, setLanguage] = useState("English");
+  const [buttons, setButtons] = useState([
+    { key: "en", value: "English" },
+    { key: "fr", value: "French" },
+    { key: "ge", value: "German" },
   ]);
 
-  const showLanguage = (element) => {
-    // setLanguage(); // тут остановился
-    //setLanguage(element);
-    // setLanguage(element);
-    //return element;
+  const showLanguage = (e) => {
+    const element = e.target.value;
+    setLanguage(element);
   };
-  //onClick={() => showLanguage}
-  const createButton = () => {
-    return lang.map((item) => (
-      <li key={item.value} value={item.value}>
-        <button className="dropdown-item" type="button" onClick={() => showLanguage(item)}>
-          {item.label}
+
+  const createButtons = () => {
+    return buttons.map((button) => (
+      <li key={button.key}>
+        <button className="dropdown-item" value={button.value} type="button" onClick={(e) => showLanguage(e)}>
+          {button.value}
         </button>
       </li>
     ));
@@ -28,10 +27,10 @@ const LangDropDown = () => {
     <div className="header__language-dropdown col-2">
       <div className="dropdown">
         <button className="btn btn-outline-secondary dropdown-toggle" type="button" id="lang-switch" data-bs-toggle="dropdown" aria-expanded="false">
-          Choose language
+          {lang}
         </button>
         <ul className="dropdown-menu" aria-labelledby="dropdownMenu2">
-          {createButton()}
+          {createButtons()}
         </ul>
       </div>
     </div>
